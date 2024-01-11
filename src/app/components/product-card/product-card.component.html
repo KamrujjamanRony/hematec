@@ -1,0 +1,23 @@
+<div class="card lg:card-side bg-base-100 shadow-xl">
+  <figure><img [src]="
+    product?.imageUrl !== ''
+      ? ImageApi + product.imageUrl
+      : emptyImg
+  "
+      alt="Product Image" class="h-full w-full md:h-[300px] md:w-[300px] xl:w-[500px]" /></figure>
+  <div class="card-body text-left w-full">
+    <h2 class="card-title text-primary">{{ product?.productName }}</h2>
+    @if (product?.brand) {<p><span class="font-semibold">Brand:</span> {{ product?.brand }}</p>}
+    @if (product?.model) {<p><span class="font-semibold">Model:</span> {{ product?.model }}</p>}
+    @if (product?.origin) {<p><span class="font-semibold">Origin:</span> {{ product?.origin }}</p>}
+    @if (product?.productCategory) {
+      <p>
+        <span class="font-semibold">Category:</span>
+        {{ product?.productCategory }}
+      </p>
+    }
+    <div class="card-actions justify-end">
+      <button (click)="scrollToTopAndNavigate('/product/' + product.id)" class="btn btn-primary text-base-100 font-thin rounded-sm monospace">view details</button>
+    </div>
+  </div>
+</div>

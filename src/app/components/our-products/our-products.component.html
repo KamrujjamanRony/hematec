@@ -1,0 +1,39 @@
+<!-- product-list.component.html -->
+
+<div class="container mx-auto mb-10">
+  <div class="text-center">
+    <h1 class="text-5xl font-bold righteous text-primary my-10">
+      Our Products
+    </h1>
+
+    @if (loading) {
+      <div
+        class="block mt-10 mb-4 mx-auto h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        role="status"
+      >
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Loading...</span
+        >
+      </div>
+
+      <div class="text-center">Loading...</div>
+    } @else {
+      <div
+        class="grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-10 mb-16"
+      >
+      @for (product of products$ | async | slice : 0 : 12; track $index) {
+        <div>
+          <app-product-card [product]="product"></app-product-card>
+        </div>
+      }
+      </div>
+      <a
+        (click)="scrollToTopAndNavigate('/products/all')"
+        class="btn btn-primary rounded-none text-white px-2 md:px-5 lg:px-8 font-light lg:text-xl md:text-md text-sm btn-xs md:btn-md"
+      >
+        More
+      </a>
+    }
+  </div>
+</div>

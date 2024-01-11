@@ -1,0 +1,97 @@
+<app-cover [title]="yourTitle" [sub1]="yourSub1" [sub2]="yourSub2" [img]="img"></app-cover>
+
+@if (loading) {
+  <div
+    class="block mt-10 mb-4 mx-auto h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+    role="status"
+  >
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Loading...</span
+    >
+  </div>
+
+  <div class="text-center">Loading...</div>
+} @else {
+  <div
+    class="grid lg:grid-cols-2 grid-cols-1 justify-items-center gap-10 mb-16 container mx-auto"
+  >
+    <!-- Display products based on category -->
+    @if (category == 'hematology') {
+      @for (product of hematology; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'endoscopy') {
+      @for (product of endoscopy; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'biochemistry') {
+      @for (product of biochemistry; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'electrolyte') {
+      @for (product of electrolyte; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'poct') {
+      @for (product of poct; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'hormone') {
+      @for (product of hormone; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'esr') {
+      @for (product of esr; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'urineAnalyzer') {
+      @for (product of urineAnalyzer; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'microscope') {
+      @for (product of microscope; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'centrifuge') {
+      @for (product of centrifuge; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'labRotator') {
+      @for (product of labRotator; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'rollerMixer') {
+      @for (product of rollerMixer; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'xRay') {
+      @for (product of xRay; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'ultrasonogram') {
+      @for (product of ultrasonogram; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'cArm') {
+      @for (product of cArm; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'ecg') {
+      @for (product of ecg; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'emg') {
+      @for (product of emg; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'eeg') {
+      @for (product of eeg; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'otLight') {
+      @for (product of otLight; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'anesthesia') {
+      @for (product of anesthesia; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'diathermy') {
+      @for (product of diathermy; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'icu') {
+      @for (product of icu; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'patientMonitor') {
+      @for (product of patientMonitor; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    @if (category == 'pulseOximeter') {
+      @for (product of pulseOximeter; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+    <!-- Display all products if category is all -->
+    @if (category == 'all') {
+      @for (product of products; track $index) {<app-product-card [product]="product"></app-product-card>}
+    }
+  </div>
+}

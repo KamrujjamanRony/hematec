@@ -1,0 +1,64 @@
+<li
+  class="relative group"
+  (mouseenter)="toggleDropdown1()"
+  (mouseleave)="toggleDropdown1()"
+  (click)="toggleDropdown1()"
+>
+  <button class="group relative">
+    <span class="mr-5">Pathology</span>
+    <svg
+      [class.rotate-0]="!isOpen"
+      [class.-rotate-180]="isOpen"
+      class="transition-transform duration-200 transform absolute right-3 top-1/2 -mt-1 pointer-events-none"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 3L6 7L10 3"
+        [style.stroke]="'currentColor'"
+        [style.strokeWidth]="'2px'"
+        [style.strokeLinecap]="'round'"
+        [style.strokeLinejoin]="'round'"
+      ></path>
+    </svg>
+  </button>
+  @if (isOpen) {
+    <ul
+    class="absolute left-16 top-5 lg:top-8 mt-2 lg:w-48 w-36 bg-gradient-to-r from-base-200 to-base-100 rounded-lg py-2 z-[10000000000]"
+  >
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/biochemistry">Biochemistry</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/electrolyte">Electrolyte</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/poct">POCT</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/hormone">Hormone</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/esr">ESR</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/urineAnalyzer">Urine Analyzer</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/microscope">Microscope</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/centrifuge">Centrifuge</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/labRotator">Lab Rotator</a>
+    </li>
+    <li>
+      <a (click)="onToggleDropdown()" routerLink="/products/rollerMixer">Roller Mixer</a>
+    </li>
+  </ul>
+  }
+</li>
