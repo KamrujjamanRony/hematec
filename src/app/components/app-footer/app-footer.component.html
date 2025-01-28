@@ -1,51 +1,98 @@
 <!-- footer.component.html -->
 <div class="bg-gray-300">
-  <footer class="footer lg:flex justify-between py-6 text-neutral-content container mx-auto">
+  <footer
+    class="footer lg:flex justify-between py-6 text-black container mx-auto"
+  >
     <div class="max-w-[400px]">
-      <span class="text-black font-extrabold uppercase tracking-widest">Careers</span>
+      <span class="text-black font-extrabold uppercase tracking-widest"
+        >Careers</span
+      >
       <p>
-        If you're interested in employment opportunities at Hema-Tec, please email us:
-        @if (contact?.email) {<a [href]="'mailto:' + contact?.email" class="link link-hover">{{contact?.email}}</a>}
+        If you're interested in employment opportunities at Hema-Tec, please
+        email us: @if (contact?.email) {<a
+          [href]="'mailto:' + contact?.email"
+          class="link link-hover"
+          >{{ contact?.email }}</a
+        >}
       </p>
-      <span class="text-black font-extrabold uppercase tracking-widest mt-5">Our Vision</span>
+      <span class="text-black font-extrabold uppercase tracking-widest mt-5"
+        >Our Vision</span
+      >
       <p>
-        To Become the Most Trusted and Reliable Channel in the Market of Professional Medical Equipment.
+        To Become the Most Trusted and Reliable Channel in the Market of
+        Professional Medical Equipment.
       </p>
     </div>
     <div class="gap-0">
-      <span class="text-black font-extrabold uppercase tracking-widest">Support</span>
-      @if (contact?.phoneNumber1) {<p>{{contact?.phoneNumber1}}</p>}
-      @if (contact?.phoneNumber2) {<p>{{contact?.phoneNumber2}}</p>}
-      @if (contact?.phoneNumber3) {<p>{{contact?.phoneNumber3}}</p>}
-      @if (contact?.email) {<p>E-mail ID:</p>}
-      @if (contact?.email) {<a [href]="'mailto:' + contact?.email" class="link link-hover">{{contact?.email}}</a>}
-      @if (contact?.facebookLink) {<p>Facebook:</p>}
-      @if (contact?.facebookLink) {<a [href]="'http://' + contact?.facebookLink" class="link link-hover" target="_blank">
-        {{contact?.facebookLink}}
-      </a>}
-      @if (contact?.othersLink1) {<p>Website:</p>}
-      @if (contact?.othersLink1) {<a [href]="'http://' + contact.othersLink1" class="link link-hover" target="_blank">
-        {{contact?.othersLink1}}
-      </a>}
-      @if (contact?.othersLink2) {<a [href]="'http://' + contact.othersLink2" class="link link-hover" target="_blank">
-        {{contact?.othersLink2}}
-      </a>}
+      <span class="text-black font-extrabold uppercase tracking-widest"
+        >Support</span
+      >
+      @if (contact?.phoneNumber1) {
+      <p>{{ contact?.phoneNumber1 }}</p>
+      } @if (contact?.phoneNumber2) {
+      <p>{{ contact?.phoneNumber2 }}</p>
+      } @if (contact?.phoneNumber3) {
+      <p>{{ contact?.phoneNumber3 }}</p>
+      } @if (contact?.email) {
+      <p>E-mail ID:</p>
+      } @if (contact?.email) {<a
+        [href]="'mailto:' + contact?.email"
+        class="link link-hover"
+        >{{ contact?.email }}</a
+      >} @if (contact?.facebookLink) {
+      <p>Facebook:</p>
+      } @if (contact?.facebookLink) {<a
+        [href]="'http://' + contact?.facebookLink"
+        class="link link-hover"
+        target="_blank"
+      >
+        {{ contact?.facebookLink }} </a
+      >} @if (contact?.othersLink1) {
+      <p>Website:</p>
+      } @if (contact?.othersLink1) {<a
+        [href]="'http://' + contact.othersLink1"
+        class="link link-hover"
+        target="_blank"
+      >
+        {{ contact?.othersLink1 }} </a
+      >} @if (contact?.othersLink2) {<a
+        [href]="'http://' + contact.othersLink2"
+        class="link link-hover"
+        target="_blank"
+      >
+        {{ contact?.othersLink2 }} </a
+      >}
     </div>
     <div>
-      <span class="text-black font-extrabold uppercase tracking-widest">Our Address</span>
-      @if (contact?.address1) {<p>{{contact?.address1}}</p>}
-      @if (contact?.address2) {<p>{{contact?.address2}}</p>}
-      <span class="text-black font-extrabold uppercase tracking-widest mt-2">Customer Care Hours</span>
+      <span class="text-black font-extrabold uppercase tracking-widest"
+        >Our Address</span
+      >
+      @if (contact?.address1) {
+      <p>{{ contact?.address1 }}</p>
+      } @if (contact?.address2) {
+      <p>{{ contact?.address2 }}</p>
+      }
+      <span class="text-black font-extrabold uppercase tracking-widest mt-2"
+        >Customer Care Hours</span
+      >
       <p>Saturday to Thursday: 10 am – 07 pm</p>
-      <span class="text-black font-extrabold uppercase tracking-widest mt-2">Social Media</span>
+      <span class="text-black font-extrabold uppercase tracking-widest mt-2"
+        >Social Media</span
+      >
       <div>
         <ul class="flex">
           @if (contact?.facebookLink) {
-            <li class="bg-primary text-base-100 hover:bg-base-200 hover:font w-10 h-10 rounded-full flex justify-center items-center hover:text-primary mx-1">
-              <a target="_blank" [href]="'http://' + contact.facebookLink" class="link link-hover">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
+          <li
+            class="bg-primary text-base-100 hover:bg-base-200 hover:font w-10 h-10 rounded-full flex justify-center items-center hover:text-primary mx-1"
+          >
+            <a
+              target="_blank"
+              [href]="'http://' + contact.facebookLink"
+              class="link link-hover"
+            >
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
           }
           <!-- @if (contact?.facebookLink) {
             <li class="bg-primary text-base-100 hover:bg-base-200 w-10 h-10 rounded-full flex justify-center items-center hover:text-primary mx-1">
@@ -65,13 +112,13 @@
       </div>
     </div>
   </footer>
-  <footer class="footer container mx-auto py-4 border-t border-slate-500 text-base-content flex justify-center">
+  <footer
+    class="footer container mx-auto py-4 border-t border-slate-500 text-base-content flex justify-center"
+  >
     <div class="text-gray-600">
       <p>
         Copyright &copy; 2024
-        <a routerLink="/" class="text-accent capitalize roboto">
-          hema-tec
-        </a>
+        <a routerLink="/" class="text-accent capitalize roboto"> hema-tec </a>
         . All right reserved
       </p>
     </div>
