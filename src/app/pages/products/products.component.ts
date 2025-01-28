@@ -8,11 +8,10 @@ import { ProductService } from 'app/features/services/product.service';
 import { Observable, Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
-  standalone: true,
-  imports: [CoverComponent, ProductCardComponent]
+    selector: 'app-products',
+    templateUrl: './products.component.html',
+    styleUrls: ['./products.component.css'],
+    imports: [CoverComponent, ProductCardComponent]
 })
 export class ProductsComponent implements OnInit, OnDestroy {
   yourTitle!: string;

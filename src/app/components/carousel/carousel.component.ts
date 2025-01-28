@@ -7,11 +7,10 @@ import { IgxCarouselModule, IgxSliderModule } from 'igniteui-angular';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css'],
-  standalone: true,
-  imports: [IgxCarouselModule, IgxSliderModule, CommonModule]
+    selector: 'app-carousel',
+    templateUrl: './carousel.component.html',
+    styleUrls: ['./carousel.component.css'],
+    imports: [IgxCarouselModule, IgxSliderModule, CommonModule]
 })
 export class CarouselComponent implements OnInit {
   carousel$?: Observable<CarouselModel[]>;

@@ -8,11 +8,10 @@ import { ProductModel } from 'app/features/model/product.model';
 import { ProductService } from 'app/features/services/product.service';
 
 @Component({
-  selector: 'app-edit-product',
-  templateUrl: './edit-product.component.html',
-  styleUrls: ['./edit-product.component.css'],
-  standalone: true,
-  imports: [CoverComponent, FormsModule]
+    selector: 'app-edit-product',
+    templateUrl: './edit-product.component.html',
+    styleUrls: ['./edit-product.component.css'],
+    imports: [CoverComponent, FormsModule]
 })
 export class EditProductComponent implements OnInit, OnDestroy {
   yourTitle: string = 'Update Product information';

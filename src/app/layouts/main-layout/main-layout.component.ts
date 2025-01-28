@@ -5,11 +5,10 @@ import { HeaderComponent } from 'app/components/header/header.component';
 import { NavbarComponent } from 'app/components/navbar/navbar.component';
 
 @Component({
-  selector: 'app-main-layout',
-  templateUrl: './main-layout.component.html',
-  styleUrls: ['./main-layout.component.css'],
-  standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavbarComponent, AppFooterComponent]
+    selector: 'app-main-layout',
+    templateUrl: './main-layout.component.html',
+    styleUrls: ['./main-layout.component.css'],
+    imports: [RouterOutlet, HeaderComponent, NavbarComponent, AppFooterComponent]
 })
 export class MainLayoutComponent {
 

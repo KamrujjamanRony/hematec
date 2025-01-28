@@ -8,11 +8,10 @@ import { AddCarouselRequest } from 'app/features/model/carousel.model';
 import { CarouselService } from 'app/features/services/carousel.service';
 
 @Component({
-  selector: 'app-add-carousel',
-  templateUrl: './add-carousel.component.html',
-  styleUrls: ['./add-carousel.component.css'],
-  standalone: true,
-  imports: [CoverComponent, FormsModule]
+    selector: 'app-add-carousel',
+    templateUrl: './add-carousel.component.html',
+    styleUrls: ['./add-carousel.component.css'],
+    imports: [CoverComponent, FormsModule]
 })
 export class AddCarouselComponent implements OnDestroy {
   // Component properties

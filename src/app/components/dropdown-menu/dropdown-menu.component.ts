@@ -6,11 +6,10 @@ import { DropdownSub3Component } from '../dropdown-sub3/dropdown-sub3.component'
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-dropdown-menu',
-  templateUrl: './dropdown-menu.component.html',
-  styleUrls: ['./dropdown-menu.component.css'],
-  standalone: true,
-  imports: [DropdownSub1Component, DropdownSub2Component, DropdownSub3Component, RouterLink]
+    selector: 'app-dropdown-menu',
+    templateUrl: './dropdown-menu.component.html',
+    styleUrls: ['./dropdown-menu.component.css'],
+    imports: [DropdownSub1Component, DropdownSub2Component, DropdownSub3Component, RouterLink]
 })
 export class DropdownMenuComponent {
   isOpenM: boolean = false;

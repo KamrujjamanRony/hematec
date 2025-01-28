@@ -8,11 +8,10 @@ import { ProductModel } from 'app/features/model/product.model';
 import { ProductService } from 'app/features/services/product.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'],
-  standalone: true,
-  imports: [DropdownMenuComponent, FormsModule, RouterLink]
+    selector: 'app-navbar',
+    templateUrl: './navbar.component.html',
+    styleUrls: ['./navbar.component.css'],
+    imports: [DropdownMenuComponent, FormsModule, RouterLink]
 })
 export class NavbarComponent implements OnInit {
   menuItems = [

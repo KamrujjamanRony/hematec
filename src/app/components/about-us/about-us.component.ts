@@ -8,11 +8,10 @@ import { AboutModel } from 'app/features/model/about.model';
 import { AboutService } from 'app/features/services/about.service';
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.css'],
-  standalone: true,
-  imports: [CoverComponent, FormsModule]
+    selector: 'app-about-us',
+    templateUrl: './about-us.component.html',
+    styleUrls: ['./about-us.component.css'],
+    imports: [CoverComponent, FormsModule]
 })
 export class AboutUsComponent implements OnInit, OnDestroy {
   yourTitle: string = 'Update About Us';

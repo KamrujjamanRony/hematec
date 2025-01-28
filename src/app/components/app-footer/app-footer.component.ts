@@ -6,11 +6,10 @@ import { ContactService } from 'app/features/services/contact.service';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './app-footer.component.html',
-  styleUrls: ['./app-footer.component.css'],
-  standalone: true,
-  imports: []
+    selector: 'app-footer',
+    templateUrl: './app-footer.component.html',
+    styleUrls: ['./app-footer.component.css'],
+    imports: []
 })
 export class AppFooterComponent implements OnInit {
   // Define FontAwesome icons

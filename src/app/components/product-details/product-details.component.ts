@@ -9,11 +9,10 @@ import { CoverComponent } from '../cover/cover.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-product-details',
-  templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css'],
-  standalone: true,
-  imports: [ProductCardComponent, CoverComponent, CommonModule]
+    selector: 'app-product-details',
+    templateUrl: './product-details.component.html',
+    styleUrls: ['./product-details.component.css'],
+    imports: [ProductCardComponent, CoverComponent, CommonModule]
 })
 export class ProductDetailsComponent implements OnInit, OnDestroy {
   yourTitle: string = 'product details';

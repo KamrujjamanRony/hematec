@@ -8,11 +8,10 @@ import { AddressModel } from 'app/features/model/address.model';
 import { ContactService } from 'app/features/services/contact.service';
 
 @Component({
-  selector: 'app-contact-us',
-  templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.css'],
-  standalone: true,
-  imports: [CoverComponent, FormsModule]
+    selector: 'app-contact-us',
+    templateUrl: './contact-us.component.html',
+    styleUrls: ['./contact-us.component.css'],
+    imports: [CoverComponent, FormsModule]
 })
 export class ContactUsComponent implements OnInit, OnDestroy {
   yourTitle: string = 'Update Contact Us';

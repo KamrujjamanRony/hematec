@@ -8,11 +8,10 @@ import { CarouselModel } from 'app/features/model/carousel.model';
 import { CarouselService } from 'app/features/services/carousel.service';
 
 @Component({
-  selector: 'app-edit-carousel',
-  templateUrl: './edit-carousel.component.html',
-  styleUrls: ['./edit-carousel.component.css'],
-  standalone: true,
-  imports: [CoverComponent, FormsModule]
+    selector: 'app-edit-carousel',
+    templateUrl: './edit-carousel.component.html',
+    styleUrls: ['./edit-carousel.component.css'],
+    imports: [CoverComponent, FormsModule]
 })
 export class EditCarouselComponent implements OnInit, OnDestroy {
   yourTitle: string = 'Update Carousel information';

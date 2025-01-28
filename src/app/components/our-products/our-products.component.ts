@@ -8,11 +8,10 @@ import { ProductService } from 'app/features/services/product.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-our-products',
-  templateUrl: './our-products.component.html',
-  styleUrls: ['./our-products.component.css'],
-  standalone: true,
-  imports: [ProductCardComponent, CommonModule]
+    selector: 'app-our-products',
+    templateUrl: './our-products.component.html',
+    styleUrls: ['./our-products.component.css'],
+    imports: [ProductCardComponent, CommonModule]
 })
 export class OurProductsComponent implements OnInit {
   products$?: Observable<ProductModel[]>;

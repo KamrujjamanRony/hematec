@@ -3,11 +3,10 @@ import { Router } from '@angular/router';
 import { environment } from '@environments/environments';
 
 @Component({
-  selector: 'app-product-card',
-  templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.css'],
-  standalone: true,
-  imports: []
+    selector: 'app-product-card',
+    templateUrl: './product-card.component.html',
+    styleUrls: ['./product-card.component.css'],
+    imports: []
 })
 export class ProductCardComponent {
   @Input() product: any;

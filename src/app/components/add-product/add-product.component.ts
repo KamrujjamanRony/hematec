@@ -9,11 +9,10 @@ import { AddProductRequest } from 'app/features/model/add-poduct-request.model';
 import { ProductService } from 'app/features/services/product.service';
 
 @Component({
-  selector: 'app-add-product',
-  templateUrl: './add-product.component.html',
-  styleUrls: ['./add-product.component.css'],
-  standalone: true,
-  imports: [CoverComponent, FormsModule]
+    selector: 'app-add-product',
+    templateUrl: './add-product.component.html',
+    styleUrls: ['./add-product.component.css'],
+    imports: [CoverComponent, FormsModule]
 })
 export class AddProductComponent implements OnDestroy {
   // Component properties

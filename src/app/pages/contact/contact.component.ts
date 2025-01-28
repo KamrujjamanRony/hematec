@@ -9,11 +9,10 @@ import { Observable } from 'rxjs';
 import { Carousel, Dropdown, initTE } from 'tw-elements';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
-  standalone: true,
-  imports: [CoverComponent]
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    imports: [CoverComponent]
 })
 export class ContactComponent implements OnInit {
   yourTitle: string = 'Contact Us';

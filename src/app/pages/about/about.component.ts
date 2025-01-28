@@ -6,11 +6,10 @@ import { AboutService } from 'app/features/services/about.service';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
-  standalone: true,
-  imports: [CoverComponent]
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.css'],
+    imports: [CoverComponent]
 })
 export class AboutComponent implements OnInit {
   yourTitle: string = "About Us";

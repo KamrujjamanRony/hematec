@@ -8,11 +8,10 @@ import { ContactService } from 'app/features/services/contact.service';
 import { AboutService } from 'app/features/services/about.service';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css'],
-  standalone: true,
-  imports: [RouterLink]
+    selector: 'app-sidebar',
+    templateUrl: './sidebar.component.html',
+    styleUrls: ['./sidebar.component.css'],
+    imports: [RouterLink]
 })
 export class SidebarComponent implements OnInit {
   companyID: string = environment.companyCode.toString();
