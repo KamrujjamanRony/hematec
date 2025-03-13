@@ -8,10 +8,10 @@ import { ProductService } from 'app/features/services/product.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-our-products',
-    templateUrl: './our-products.component.html',
-    styleUrls: ['./our-products.component.css'],
-    imports: [ProductCardComponent, CommonModule]
+  selector: 'app-our-products',
+  templateUrl: './our-products.component.html',
+  styleUrls: ['./our-products.component.css'],
+  imports: [ProductCardComponent, CommonModule]
 })
 export class OurProductsComponent implements OnInit {
   products$?: Observable<ProductModel[]>;
@@ -22,6 +22,7 @@ export class OurProductsComponent implements OnInit {
     if (!this.products$) {
       this.loading = false;
       this.products$ = productService.getCompanyProducts(this.companyID);
+      this.products$.subscribe(products => console.log(products));
     }
   }
 
@@ -36,7 +37,7 @@ export class OurProductsComponent implements OnInit {
   scrollToTopAndNavigate(route: string): void {
     // Scroll to the top of the page
     window.scrollTo(0, 0);
-  
+
     // Navigate to the specified route
     this.router.navigateByUrl(route);
   }
