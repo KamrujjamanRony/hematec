@@ -9,10 +9,10 @@ import { AddProductRequest } from 'app/features/model/add-poduct-request.model';
 import { ProductService } from 'app/features/services/product.service';
 
 @Component({
-    selector: 'app-add-product',
-    templateUrl: './add-product.component.html',
-    styleUrls: ['./add-product.component.css'],
-    imports: [CoverComponent, FormsModule]
+  selector: 'app-add-product',
+  templateUrl: './add-product.component.html',
+  styleUrls: ['./add-product.component.css'],
+  imports: [CoverComponent, FormsModule]
 })
 export class AddProductComponent implements OnDestroy {
   // Component properties
@@ -65,7 +65,7 @@ export class AddProductComponent implements OnDestroy {
     this.addProductSubscription = this.productService.addProduct(formData)
       .subscribe({
         next: (response) => {
-          this.router.navigateByUrl('hema34/products');
+          this.router.navigateByUrl('hema49/products');
         },
         error: (error) => {
           console.error('Error adding product:', error);

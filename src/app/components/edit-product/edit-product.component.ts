@@ -8,10 +8,10 @@ import { ProductModel } from 'app/features/model/product.model';
 import { ProductService } from 'app/features/services/product.service';
 
 @Component({
-    selector: 'app-edit-product',
-    templateUrl: './edit-product.component.html',
-    styleUrls: ['./edit-product.component.css'],
-    imports: [CoverComponent, FormsModule]
+  selector: 'app-edit-product',
+  templateUrl: './edit-product.component.html',
+  styleUrls: ['./edit-product.component.css'],
+  imports: [CoverComponent, FormsModule]
 })
 export class EditProductComponent implements OnInit, OnDestroy {
   yourTitle: string = 'Update Product information';
@@ -61,7 +61,7 @@ export class EditProductComponent implements OnInit, OnDestroy {
     formData.append('CatalogUrl', this.productInfo?.catalogUrl ?? '');
     if (this.file instanceof File) {
       formData.append('ImageFormFile', this.file);
-    } 
+    }
     else {
       formData.append('ImageUrl', this.url ?? '');
     }
@@ -70,7 +70,7 @@ export class EditProductComponent implements OnInit, OnDestroy {
       this.editProductSubscription = this.productService.updateProduct(this.id, formData)
         .subscribe({
           next: (response) => {
-            this.router.navigate(['hema34/products']);
+            this.router.navigate(['hema49/products']);
           }
         });
     }

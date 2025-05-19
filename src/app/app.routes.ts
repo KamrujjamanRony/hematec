@@ -45,7 +45,7 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'hema34',
+    path: 'hema49',
     component: AdminLayoutComponent,
     children: [
       { path: '', component: ProductListComponent },

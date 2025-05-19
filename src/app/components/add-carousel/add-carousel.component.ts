@@ -8,10 +8,10 @@ import { AddCarouselRequest } from 'app/features/model/carousel.model';
 import { CarouselService } from 'app/features/services/carousel.service';
 
 @Component({
-    selector: 'app-add-carousel',
-    templateUrl: './add-carousel.component.html',
-    styleUrls: ['./add-carousel.component.css'],
-    imports: [CoverComponent, FormsModule]
+  selector: 'app-add-carousel',
+  templateUrl: './add-carousel.component.html',
+  styleUrls: ['./add-carousel.component.css'],
+  imports: [CoverComponent, FormsModule]
 })
 export class AddCarouselComponent implements OnDestroy {
   // Component properties
@@ -50,7 +50,7 @@ export class AddCarouselComponent implements OnDestroy {
     this.addCarouselSubscription = this.carouselService.addCarousel(formData)
       .subscribe({
         next: (response) => {
-          this.router.navigateByUrl('hema34/carousel');
+          this.router.navigateByUrl('hema49/carousel');
         },
         error: (error) => {
           console.error('Error adding carousel:', error);

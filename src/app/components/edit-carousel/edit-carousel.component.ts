@@ -8,10 +8,10 @@ import { CarouselModel } from 'app/features/model/carousel.model';
 import { CarouselService } from 'app/features/services/carousel.service';
 
 @Component({
-    selector: 'app-edit-carousel',
-    templateUrl: './edit-carousel.component.html',
-    styleUrls: ['./edit-carousel.component.css'],
-    imports: [CoverComponent, FormsModule]
+  selector: 'app-edit-carousel',
+  templateUrl: './edit-carousel.component.html',
+  styleUrls: ['./edit-carousel.component.css'],
+  imports: [CoverComponent, FormsModule]
 })
 export class EditCarouselComponent implements OnInit, OnDestroy {
   yourTitle: string = 'Update Carousel information';
@@ -54,7 +54,7 @@ export class EditCarouselComponent implements OnInit, OnDestroy {
     formData.append('Description', this.carouselInfo?.description ?? '');
     if (this.file instanceof File) {
       formData.append('ImageFormFile', this.file);
-    } 
+    }
     else {
       formData.append('ImageUrl', this.url ?? '');
     }
@@ -63,7 +63,7 @@ export class EditCarouselComponent implements OnInit, OnDestroy {
       this.editCarouselSubscription = this.carouselService.updateCarousel(this.id, formData)
         .subscribe({
           next: (response) => {
-            this.router.navigate(['hema34/carousel']);
+            this.router.navigate(['hema49/carousel']);
           }
         });
     }
